@@ -5,7 +5,7 @@ describe Solver do
         before(:each) do
             @solve = Solver.new
         end
-          
+
         it 'checks if the correct factorial is returned' do
             expect(@solve.factorial(4)).to eql(24)
             expect(@solve.factorial(5)).to eql(120)
@@ -24,5 +24,13 @@ describe Solver do
             expect(@solve.reverse('Daniel')).to eql 'leinaD'
         end
 
+        it 'run fizzbuzz method with argument integer number and check result ' do
+            expect(@solver.fizzbuzz(10)).to eq 'buzz'
+            expect(@solver.fizzbuzz(11)).to eq 11
+            expect(@solver.fizzbuzz(12)).to eq 'fizz'
+            expect(@solver.fizzbuzz(13)).to eq 13
+            expect(@solver.fizzbuzz(14)).to eq 14
+            expect(@solver.fizzbuzz(15)).to eq 'fizzbuzz'
+        end
     end
 end
