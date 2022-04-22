@@ -32,5 +32,9 @@ describe Solver do
       expect(@solve.fizzbuzz(14)).to eq 14
       expect(@solve.fizzbuzz(15)).to eq 'fizzbuzz'
     end
+
+    it 'throws exception when negative number is passed' do
+      expect { @solve.factorial(-1) }.to raise_error(ArgumentError)
+    end
   end
 end
