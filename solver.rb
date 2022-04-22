@@ -7,4 +7,6 @@ class Solver
     def reverse(ghana)
         ghana.reverse
     end
+
+    
 end
