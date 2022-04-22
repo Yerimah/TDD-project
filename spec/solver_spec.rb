@@ -25,12 +25,12 @@ describe Solver do
         end
 
         it 'run fizzbuzz method with argument integer number and check result ' do
-            expect(@solver.fizzbuzz(10)).to eq 'buzz'
-            expect(@solver.fizzbuzz(11)).to eq 11
-            expect(@solver.fizzbuzz(12)).to eq 'fizz'
-            expect(@solver.fizzbuzz(13)).to eq 13
-            expect(@solver.fizzbuzz(14)).to eq 14
-            expect(@solver.fizzbuzz(15)).to eq 'fizzbuzz'
+            expect(@solve.fizzbuzz(10)).to eq 'buzz'
+            expect(@solve.fizzbuzz(11)).to eq 11
+            expect(@solve.fizzbuzz(12)).to eq 'fizz'
+            expect(@solve.fizzbuzz(13)).to eq 13
+            expect(@solve.fizzbuzz(14)).to eq 14
+            expect(@solve.fizzbuzz(15)).to eq 'fizzbuzz'
         end
     end
 end
